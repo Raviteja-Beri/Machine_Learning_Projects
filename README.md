@@ -1,45 +1,86 @@
 # 🧠 Machine Learning Projects
 
-Welcome to my collection of machine learning projects! This repository contains end-to-end implementations of various ML algorithms and web apps to demonstrate practical use cases using real-world datasets.
+Welcome to my collection of machine learning projects! This repository contains end-to-end implementations of regression models using real-world data, along with interactive web applications powered by Streamlit.
 
 ---
 
 ## 📌 Projects
 
+---
+
 ### 🏠 House Price Prediction using Simple Linear Regression
 
-#### 🔍 Objective
+#### 🔍 Objective  
 Predict the price of a house based on its square footage using a Simple Linear Regression model.
 
 #### ⚙️ Project Structure
-- **`main.py`**: 
-  - Loads and preprocesses the dataset (`House_data.csv`).
-  - Trains a Simple Linear Regression model using `scikit-learn`.
-  - Visualizes training and test results using Matplotlib.
-  - Serializes the trained model using `pickle`.
+- **`main.py`**:
+  - Loads housing dataset (`House_data.csv`).
+  - Trains a linear regression model to learn price vs. square footage.
+  - Visualizes training and test set performance.
+  - Saves the trained model to a `.pkl` file using `pickle`.
 
 - **`app.py`**:
-  - Interactive **Streamlit** web application.
-  - Accepts user input (square footage) and predicts house price.
-  - Loads the trained model and performs inference in real-time.
+  - Streamlit web app that allows users to input square footage.
+  - Loads the saved model and provides real-time house price prediction.
 
 #### 📊 Features
-- End-to-end pipeline from training to deployment.
-- Clean data visualizations for better understanding of model performance.
-- Interactive user interface using Streamlit.
-- Model saved and reused using Python’s `pickle`.
+- Clean visualizations of model fit.
+- Interactive Streamlit frontend.
+- End-to-end model deployment using `pickle`.
 
 #### 🧰 Technologies Used
-- Python
-- NumPy, Pandas, Matplotlib
+- Python, NumPy, Pandas, Matplotlib
 - scikit-learn
 - Streamlit
 
-#### 🚀 How to Run
+#### 📝 Sample Output
+> ✅ The predicted price for a house with **1000** square feet is: **$245,000.00**
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Raviteja-Beri/Machine_Learning_Projects.git
-   cd Machine_Learning_Projects/House_Price_Prediction
+---
 
+### 💼 Salary Prediction using Simple Linear Regression
+
+#### 🔍 Objective  
+Predict the salary of an individual based on their years of experience using a Simple Linear Regression model.
+
+#### ⚙️ Project Structure
+- **`main.py`**:
+  - Loads dataset (`Salary_Data.csv`).
+  - Trains and evaluates a linear regression model.
+  - Displays model performance (R², MSE) in the console.
+  - Saves the trained model to disk using `pickle`.
+
+- **`app.py`**:
+  - Streamlit application for real-time salary prediction.
+  - User inputs years of experience, receives salary prediction instantly.
+
+#### 📊 Features
+- Data visualization and evaluation metrics.
+- Interactive UI via Streamlit.
+- Real-world salary prediction model based on experience.
+
+#### 🧰 Technologies Used
+- Python, NumPy, Pandas, Matplotlib
+- scikit-learn
+- Streamlit
+
+#### 📝 Sample Output
+> ✅ The predicted salary for **12 years** of experience is: **$120,000.00**
+
+---
+
+## 🚀 How to Run the Projects Locally
+
+### 📦 Prerequisites
+Install the required Python libraries:
+```bash
+pip install numpy pandas matplotlib scikit-learn streamlit
+
+---
+
+### ⬇️ Step 1: Clone the Repository
+```bash
+git clone https://github.com/Raviteja-Beri/Machine_Learning_Projects.git
+cd Machine_Learning_Projects
 
