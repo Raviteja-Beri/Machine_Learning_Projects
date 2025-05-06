@@ -76,11 +76,28 @@ Predict the salary of an individual based on their years of experience using a S
 Install the required Python libraries:
 ```bash
 pip install numpy pandas matplotlib scikit-learn streamlit
-
----
+```
 
 ### ⬇️ Step 1: Clone the Repository
+
 ```bash
 git clone https://github.com/Raviteja-Beri/Machine_Learning_Projects.git
 cd Machine_Learning_Projects
+```
+
+### 🏠 Run: House Price Prediction
+```bash
+cd House_Price_Prediction
+python main.py         # Optional: Train the model
+streamlit run app.py   # Run the web app
+```
+
+### 💼 Run: Salary Prediction
+```bash
+cd Salary_Prediction
+python main.py         # Optional: Train the model
+streamlit run app.py   # Run the web app
+```
+
+#### 💡 After launching, the Streamlit app will open in your browser. You can input values and get real-time predictions using the trained models.
 
